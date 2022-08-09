@@ -1,6 +1,6 @@
 <div align="center">
-  <a href="https://github.com/pulsar-stellar/pulsar-stellar.ai-frontend">
-    <img src="assets/Pulsar-Backend.svg" alt="Logo" width="" height="200">
+  <a href="https://github.com/pulsar-stellar/pulsar-stellar.ai">
+    <img src="assets/Pulsar.svg" alt="Logo" width="" height="200">
   </a>
 </div>
 
