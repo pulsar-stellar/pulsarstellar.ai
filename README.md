@@ -17,8 +17,6 @@
 
 # pulsarstellar.ai
 
-Welcome back-end developers to our backend repo to pulsarstellar's website! 
+Welcome beautiful people to the repo to pulsarstellar's website! 
 We use `Python's Django` to run the server side part of things. Be apart of the community
 and get started!
-
-## Get Started : 
