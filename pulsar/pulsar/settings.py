@@ -27,7 +27,7 @@ SECRET_KEY = 'u&3va&+ye)j2-m1@t^99tvw@tggdy#mtca yv76r_dj)9as4*5$'
 #SECRET_KEY = os.environ.get('SECRET_KEY')
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Adrian Blanc', 'adrian@pulsarstellar.ai'),
 )
 
 MANAGERS = ADMINS
@@ -54,7 +54,6 @@ THIRD_PARTY_APPS = [
 
 PULSAR_APPS = [
     'core',
-    'account',
 ]
 
 
@@ -76,9 +75,11 @@ DJANGO_MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+THIRD_PARTY_MIDDLEWARE = [
+]
 
 
-MIDDLEWARE = DJANGO_MIDDLEWARE #+ THIRD_PARTY_MIDDLEWARE
+MIDDLEWARE = DJANGO_MIDDLEWARE + THIRD_PARTY_MIDDLEWARE
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -93,8 +94,9 @@ APPS_DIR = os.path.join(BASE_DIR, './apps/')
 sys.path.insert(0, APPS_DIR)
 
 
-TEMPLATE_DIRS = os.path.join(BASE_DIR, 'templates')
-
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates'),
+)
 
 ROOT_URLCONF = 'pulsar.urls'
 
@@ -106,9 +108,7 @@ ROOT_URLCONF = 'pulsar.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            TEMPLATE_DIRS,
-        ],
+        'DIRS': TEMPLATE_DIRS,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -185,8 +185,8 @@ STATICFILES_DIRS = (
 )
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR, '/path/')
-MEDIA_URL = '/path/'
+MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
+MEDIA_URL = '/media/'
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -208,3 +208,8 @@ REST_FRAMEWORK = {
     ]
 }
 
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# REDIRECTIONS
+
+LOGIN_REDIRECT_URL = '/'

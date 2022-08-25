@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/pulsar-stellar/pulsar-stellar.ai">
+  <a href="https://github.com/pulsar-stellar/pulsarstellar.ai">
     <img src="assets/Pulsar.svg" alt="Logo" width="" height="200">
   </a>
 </div>
