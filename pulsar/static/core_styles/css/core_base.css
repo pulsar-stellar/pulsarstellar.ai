@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+
+.main-font {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main-background {
+    background-image: linear-gradient(to bottom right, #5DD39E, #3B60E4);
+}
