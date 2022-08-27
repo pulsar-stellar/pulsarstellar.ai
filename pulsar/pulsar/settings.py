@@ -54,6 +54,7 @@ THIRD_PARTY_APPS = [
 
 PULSAR_APPS = [
     'core',
+    'registrar',
 ]
 
 
