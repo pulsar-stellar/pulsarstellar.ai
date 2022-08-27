@@ -1,0 +1,42 @@
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'core_styles/css/components/core_navbar.css' %}">
+{% endblock %}
+
+
+<nav class="navbar bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'core-home' %}">
+      <img src="https://storage.googleapis.com/pulsar-stellar-web-images/icons/pulsar-stellar-logo" alt="pulsar-stellar-logo" width="30" height="30">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <i class="fa-solid fa-bars-staggered"></i>    
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title main-font" id="offcanvasNavbarLabel">Pulsar-Stellar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-center">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 main-font">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="{% url 'core-home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'core-about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Docs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
