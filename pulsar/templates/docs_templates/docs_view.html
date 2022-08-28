@@ -1,0 +1,32 @@
+{% extends "docs_templates/docs_base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div id="docs-view">
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+
+      {% include 'docs_templates/components/docs_sidebar.html' %}
+
+      <div class="col py-3">
+
+        <section id="docs-view-1" class="main-background rounded" style="height: 50vh;">
+          <div class="h-100 d-flex align-items-center justify-content-center text-center">
+            <h1 class="text-white main-font fw-semibold">Docs</h1>
+          </div>
+        </section>
+
+        <section id="docs-view-2" class="my-3" style="height: 300vh;">
+        {% block doc %}
+        
+        {% endblock doc %}
+        </section>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}
+

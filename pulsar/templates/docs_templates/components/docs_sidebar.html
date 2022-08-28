@@ -1,0 +1,55 @@
+{% load static %}
+
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'docs_styles/css/components/docs_sidebar.css' %}">
+{% endblock %}
+
+
+<aside class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light border-end d-none d-sm-none d-md-none d-lg-block">
+    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+        <a class="nav-link dropdown-toggle d-flex align-items-center pb-3 mb-md-0 me-md-auto text-decoration-none text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="fs-5 d-none d-sm-inline text-dark main-font"><u>Python | v3.9</u></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-light main-font">
+            <li><a class="dropdown-item" href="#Coming-Soon">Python <span class="small text-muted">(coming soon)</span></a></li>
+            <li><a class="dropdown-item" href="#Coming-Later">C <span class="small text-muted">(coming later)</span></a></li>
+            <li><a class="dropdown-item" href="#Coming-Later">C# <span class="small text-muted">(coming later)</span></a></li>
+            <li><a class="dropdown-item" href="#Coming-Later">C++ <span class="small text-muted">(coming later)</span></a></li>
+        </ul>
+        <ul class="list-unstyled ps-0 mt-3">
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#libraries-collapse" aria-expanded="true">
+                Libraries
+              </button>
+              <div class="collapse" id="libraries-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#Coming-Soon" class="link-dark rounded">pulsarstellar </a><span class="small text-muted">(coming soon)</span></li>
+                  <li><a href="#Coming-Soon" class="link-dark rounded">ps-movement </a><span class="small text-muted">(coming soon)</span></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#versions-collapse" aria-expanded="true">
+                Versions
+              </button>
+              <div class="collapse" id="versions-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#Coming-Soon" class="link-dark rounded">v0.1.0 </a><span class="small text-muted">(coming soon)</span></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#docs-collapse" aria-expanded="false">
+                  Documentation
+                </button>
+                <div class="collapse show" id="docs-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#Coming-Soon" class="link-dark rounded">Overview</a></li>
+                  </ul>
+                </div>
+              </li>
+          </ul>
+        <hr>
+    </div>
+</aside>
