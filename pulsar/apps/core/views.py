@@ -10,6 +10,10 @@ def core_about(request):
     return render(request, 'core_templates/views/core_about.html',  {'title': 'About'})
 
 
+def core_research(request):
+    return render(request, 'core_templates/views/core_research.html',  {'title': 'Research'})
+
+
 # ERRORS VIEWS
 
 def page_not_found(request, exception):

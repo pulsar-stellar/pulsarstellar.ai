@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class RegistrarConfig(AppConfig):
+class DocsConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "registrar"
+    name = "docs"

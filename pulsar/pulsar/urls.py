@@ -14,7 +14,8 @@ third_party_urls = [
 
 pulsar_urls = [
     path('', include('core.urls')),
-    path('', include('registrar.urls')),
+    path('blog/', include('blog.urls')),
+    path('docs/', include('docs.urls')),
 ]
 
 

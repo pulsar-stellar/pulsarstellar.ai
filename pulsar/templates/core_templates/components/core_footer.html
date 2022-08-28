@@ -1,13 +1,13 @@
 {% load static %}
 
 
-<footer class="footer container medium-xsmall-copy line-height-1.6 mt-5">
+<footer id="about-navigation" class="footer container medium-xsmall-copy line-height-1.6 mt-5">
     <a href="{% url 'core-home' %}" class="d-block footer-logo mb-5" style="margin-left:-1px">
         <img src="https://storage.googleapis.com/pulsar-stellar-web-images/icons/pulsar-stellar-word-logo" alt="pulsar-stellar-logo" width="150" height="50">
     </a>
     <div class="row mb-1">
       
-        <div class="col-6 col-lg">
+        <div class="col-6 col-lg text-center">
           <ul class="mb-2 list-unstyled">
             <div class="small-caps mb-1/3 main-font mb-3">Featured</div>
             
@@ -26,59 +26,23 @@
           </ul>
         </div>
       
-        <div class="col-6 col-lg">
+        <div class="col-6 col-lg text-center">
           <ul class="mb-2 list-unstyled">
-            <div class="small-caps mb-1/3 main-font mb-3">API</div>
+            <div class="small-caps mb-1/3 main-font mb-3">Company</div>
             
-              <li><a class="text-black" href="/api/">Overview</a></li>
+              <li><a class="text-black" href="{% url 'core-about' %}">About us</a></li>
             
-              <li><a class="text-black" href="/api/pricing/">Pricing</a></li>
+              <li><a class="text-black" href="{% url 'core-about' %}#core-about-2">Goals</a></li>
             
-              <li><a class="text-black" href="/api/examples/">Examples</a></li>
+              <li><a class="text-black" href="{% url 'core-about' %}#core-about-3">Current Ventures</a></li>
             
-              <li><a class="text-black" href="/api/docs/">Docs</a></li>
+              <li><a class="text-black" href="#">Docs</a></li>
             
-              <li><a class="text-black" href="/api/policies/">Terms & Policies</a></li>
+              <li><a class="text-black" href="#">Careers</a></li>
             
               <li><a class="text-black" href="https://status.openai.com/">Status</a></li>
             
               <li><a class="text-black" href="/api/login/">Log in</a></li>
-            
-          </ul>
-        </div>
-      
-        <div class="col-6 col-lg">
-          <ul class="mb-2 list-unstyled">
-            <div class="small-caps mb-1/3 main-font mb-3">Blog</div>
-            
-              <li><a class="text-black" href="/blog/">Index</a></li>
-            
-              <li><a class="text-black" href="/blog/tags/research/">Research</a></li>
-            
-              <li><a class="text-black" href="/blog/tags/announcements/">Announcements</a></li>
-            
-              <li><a class="text-black" href="/blog/tags/events/">Events</a></li>
-            
-              <li><a class="text-black" href="/blog/tags/milestones/">Milestones</a></li>
-            
-          </ul>
-        </div>
-      
-        <div class="col-6 col-lg">
-          <ul class="mb-2 list-unstyled">
-            <div class="small-caps mb-1/3 main-font mb-3">Information</div>
-            
-              <li><a class="text-black" href="/about/">About Us</a></li>
-            
-              <li><a class="text-black" href="/charter/">Our Charter</a></li>
-            
-              <li><a class="text-black" href="/research/">Our Research</a></li>
-            
-              <li><a class="text-black" href="/publications/">Publications</a></li>
-            
-              <li><a class="text-black" href="/newsroom/">Newsroom</a></li>
-            
-              <li><a class="text-black" href="/careers/">Careers</a></li>
             
           </ul>
         </div>
