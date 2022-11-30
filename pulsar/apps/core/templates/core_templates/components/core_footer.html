@@ -1,9 +1,9 @@
 {% load static %}
 
 
-<footer id="about-navigation" class="footer container medium-xsmall-copy line-height-1.6 mt-5">
+<footer id="footer" class="footer container medium-xsmall-copy line-height-1.6 mt-5 mb-5">
     <a href="{% url 'core-home' %}" class="d-block footer-logo mb-5" style="margin-left:-1px">
-        <img src="https://storage.googleapis.com/pulsar-stellar-web-images/icons/pulsar-stellar-word-logo" alt="pulsar-stellar-logo" width="150" height="50">
+        <img src="{% static 'media/logo.svg' %}" alt="pulsar-stellar" width="150" height="50">
     </a>
     <div class="row mb-1">
       
@@ -41,19 +41,11 @@
               <li><a class="text-black" href="#">Careers</a></li>
             
               <li><a class="text-black" href="https://status.openai.com/">Status</a></li>
-            
+  
               <li><a class="text-black" href="/api/login/">Log in</a></li>
             
           </ul>
         </div>
       
-    </div>
-    <div class="row align-items-center mb-0.125">
-      <div class="col-12 col-md mb-0.5">
-        <a class="fade" style="margin-top:1px" href="/">OpenAI &copy; 2015–2022</a>&emsp;<wbr><a class="fade" style="margin-top:1px" href="/privacy/">Privacy&nbsp;Policy</a>&emsp;<wbr><a class="fade" style="margin-top:1px" href="/terms/">Terms&nbsp;of&nbsp;Use</a>
-      </div>
-      <div class="col-12 col-md-4 col-lg-4 col-xl-3 mb-0.5">
-        <div class="d-block d-md-none" style="font-size:1.333333rem"> <a class="fade icon" href="https://twitter.com/openai">twitter</a> &ensp; <a class="fade icon" href="https://youtube.com/openai">youtube</a> &ensp; <a class="fade icon" href="https://github.com/openai/">github</a> &ensp; <a class="fade icon" href="https://soundcloud.com/openai_audio">soundcloud</a> &ensp; <a class="fade icon" href="https://linkedin.com/company/openai">linkedin</a> &ensp; <a class="fade icon" href="https://facebook.com/openai.research/">facebook</a> </div> <div class="d-none d-md-block" style="font-size:1.166667rem"> <div class="d-flex justify-content-between"> <a class="fade icon" href="https://twitter.com/openai">twitter</a> &ensp; <a class="fade icon" href="https://youtube.com/openai">youtube</a> &ensp; <a class="fade icon" href="https://github.com/openai/">github</a> &ensp; <a class="fade icon" href="https://soundcloud.com/openai_audio">soundcloud</a> &ensp; <a class="fade icon" href="https://linkedin.com/company/openai">linkedin</a> &ensp; <a class="fade icon" href="https://facebook.com/openai.research/">facebook</a> </div> </div>
-      </div>
     </div>
   </footer>
